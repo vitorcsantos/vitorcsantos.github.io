@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrap {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 20vh;
+    background-color: #ededed;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 3px solid #b8873d;
+}
+
+img {
+    border-radius: 50%;
+    height: 90%;
+}
+
+section {
+    background-color: gold;
+    flex: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.profile-title {
+    display: flex;
+    align-items: center;
+    flex: 3;
+}
+
+.profile-name {
+    font-size: 2.2rem;
+}
+
+.profile-subtitle {
+    font-size: 2rem;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.profile-xp {
+    display: flex;
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.profile-education {
+    display: flex;
+    background-color: violet;
+}
+
+.profile-xp-title {
+    display: flex;
+    font-size: 2rem;
+    color: #b8873d;
+    flex: 1;
+    justify-content: center;
+}
+
+.profile-text {
+    flex: 3;
+}
+
+.dropdown {
+    width: 0;
+    height: 0;
+    border: 4px solid black;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    .profile-info {
+        display: none;
+    }
+    .profile-name {
+        font-size: 1.5rem;
+    }
+    .profile-subtitle {
+        font-size: 1rem;
+    }
+    #wrap {
+        width: 100%;
+    }
+    .profile-xp {
+        flex-direction: column;
+    }
+
+}
